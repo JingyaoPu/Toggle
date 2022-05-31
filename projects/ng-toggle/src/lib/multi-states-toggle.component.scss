@@ -1,0 +1,37 @@
+label {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.multi-states-toggle-switch {
+  font-size: 10px;
+  background-color: grey;
+  display: inline-block;
+  padding: 2px;
+  .multi-states-toggle-switch-core {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    .multi-states-toggle-switch-button {
+      padding: 3px 5px 3px 5px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+      cursor: pointer;
+      background-color: transparent;
+      color: white
+    }
+  }
+  .multi-states-toggle-switch-slider {
+    position: absolute;
+    height: 100%;
+  }
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+}

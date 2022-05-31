@@ -1,0 +1,21 @@
+<label class="multi-states-toggle-switch">
+  <div
+    class="multi-states-toggle-switch-core"
+    [ngStyle]="coreStyle"
+  >
+    <div
+      class="multi-states-toggle-switch-button"
+      [ngStyle]="buttonStyle"
+      *ngFor="let state of states;let i = index;"
+      (click)="onSelect(state.key)"
+      #stateButtonWrapper
+    >
+      {{state.text}}
+    </div>
+
+    <div 
+      class="multi-states-toggle-switch-slider"
+      [ngStyle]="sliderStyle"
+    ></div>
+  </div>
+</label>

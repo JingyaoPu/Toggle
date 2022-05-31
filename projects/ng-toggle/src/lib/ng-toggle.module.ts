@@ -1,14 +1,15 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { NgToggleComponent } from './ng-toggle.component';
+import { MultiStatesToggleComponent} from './multi-states-toggle.component'
 import { CommonModule } from '@angular/common';
 import { NgToggleConfig } from './ng-toggle.config';
 
 @NgModule({
-  declarations: [NgToggleComponent],
+  declarations: [NgToggleComponent, MultiStatesToggleComponent],
   imports: [
     CommonModule
   ],
-  exports: [NgToggleComponent],
+  exports: [NgToggleComponent, MultiStatesToggleComponent],
   providers: [NgToggleConfig]
 })
 export class NgToggleModule {
